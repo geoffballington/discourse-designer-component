@@ -3,10 +3,18 @@
 <hr>
 <div class="designer-store"><a href="{{ user.custom_fields.storeUrl }}"><div class="is-designer">{{ user.custom_fields.storeName }}</div></a></div>
 <div class="product-image-container">
-<img class="product-image">
-<img class="product-image">
-<img class="product-image">
-<img class="product-image">
+{{#if user.custom_fields.product_1_url }}
+<a href="{{ user.custom_fields.product_1_url }}" target="_blank"><img src="{{ user.custom_fields.product_1_image }}" class="product-image"></a>
+{{/if}}
+{{#if user.custom_fields.product_2_url }}
+<a href="{{ user.custom_fields.product_2_url }}" target="_blank"><img src="{{ user.custom_fields.product_2_image }}" class="product-image"></a>
+{{/if}}
+{{#if user.custom_fields.product_3_url }}
+<a href="{{ user.custom_fields.product_3_url }}" target="_blank"><img src="{{ user.custom_fields.product_3_image }}" class="product-image"></a>
+{{/if}}
+{{#if user.custom_fields.product_4_url }}
+<a href="{{ user.custom_fields.product_4_url }}" target="_blank"><img src="{{ user.custom_fields.product_4_image }}" class="product-image"></a>
+{{/if}}
 </div>
 {{/if}}
 </script>
