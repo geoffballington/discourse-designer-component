@@ -1,5 +1,6 @@
 {
   "name": "Designer Theme Component",
   "about_url": "https://designbundles.net",
-  "license_url": "https://designbundles.net"
+  "license_url": "https://designbundles.net",
+  "component": true
 }
